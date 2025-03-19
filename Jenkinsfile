@@ -12,7 +12,7 @@ pipeline {
         }
         stage('Compile Java Code') {
             steps {
-                bat 'javac HelloWorld.java'
+                bat 'javac -d . prashanth/HelloWorld.java'
             }
         }
         stage('Run Java Program') {
