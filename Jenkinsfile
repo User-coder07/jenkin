@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('clone from Github') {
             steps {
-                git branch: 'main ', url : 'https://github.com/User-coder07/jenkin.git'
+                git branch: 'main', url : 'https://github.com/User-coder07/jenkin.git'
             }
         }
         stage('Compile Java Code') {
